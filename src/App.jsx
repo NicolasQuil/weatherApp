@@ -1,9 +1,10 @@
 import './App.css';
+import Parent from './components/props/parent';
 
 function App() {
   return (
     <div >
-      <h1 className='display-1'>React App Start</h1>
+      <Parent />
     </div>
   );
 }
