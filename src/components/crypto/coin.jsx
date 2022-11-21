@@ -3,7 +3,7 @@ import React from 'react'
 const Coin = (props) => {
     const crypto = props.crypto
     return (
-        <div className='col-12 col-md-6 col-lg-4 p-4 h-100'>
+        <div className='col-12 col-md-6 col-lg-4 p-4 h-100 '>
             <div className='row border shadow p-2 h-100'>
 
                 <div className='col-12 col-md-6 '>

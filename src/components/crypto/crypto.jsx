@@ -25,7 +25,7 @@ const Crypto = () => {
   return (
     <div>
 
-      <h1 className='display-3 text-center'>Cripto coins:</h1>
+      <h1 className='display-3 text-center'>Crypto Coins💰:</h1>
       <div className="container">
         <div className="row m-0 p-0">
           {crypto?.map((item, i) => {
@@ -36,7 +36,7 @@ const Crypto = () => {
         </div>
 
       </div>
-      
+
     </div>
   )
 }
