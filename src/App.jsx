@@ -7,8 +7,6 @@ import Parent from './components/props/parent';
 function App() {
   return (
     <div >
-      {/* <Parent />
-      <Input /> */}
       <Cars/>
     </div>
   );
