@@ -1,13 +1,14 @@
 import './App.css';
 import Cars from './components/cars/cars';
-import Input from './components/input/input';
-import Parent from './components/props/parent';
+import Crypto from './components/crypto/crypto';
+
 
 
 function App() {
   return (
     <div >
-      <Cars/>
+      <Crypto/>
+      {/* <Cars/> */}
     </div>
   );
 }
