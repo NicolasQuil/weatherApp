@@ -34,10 +34,6 @@ const Cars = () => {
             if (category != "ALL" && selectRef.current.value) {
                 carsFiltered = data.filter(item => item.category === category)
             }
-            else {
-
-                carsFiltered = [...data]
-            }
             setCars(carsFiltered);
 
             // const resp = await axios(url)
@@ -52,7 +48,6 @@ const Cars = () => {
     //בשביל השאפליקציה תאתחל את עצמה ביחד עם הקשת האייפיאי נשתמש בהוק זה:
     useEffect(() => {
         doApi()
-
     }, [category])
 
     return (
@@ -84,7 +79,6 @@ const Cars = () => {
                 </div>
 
             </div>
-
 
             {/* {cars.map((item,i)=>
                 (
