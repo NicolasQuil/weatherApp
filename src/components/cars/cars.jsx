@@ -38,7 +38,6 @@ const Cars = () => {
 
                 carsFiltered = [...data]
             }
-
             setCars(carsFiltered);
 
             // const resp = await axios(url)
@@ -82,7 +81,6 @@ const Cars = () => {
                             <Car key={i} number={i} car={item} />
                         )
                     })}
-                    {/* Render All Cars */}
                 </div>
 
             </div>
