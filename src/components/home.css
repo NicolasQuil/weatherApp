@@ -1,0 +1,10 @@
+#general {
+    background-image: url("../img/clima.jpg");
+    background-size: cover;
+    height: 850px;
+
+}
+
+#button:hover {
+    color: rgb(241, 138, 13);
+}

@@ -47,11 +47,11 @@ const Home = () => {
     doApi();
   }, [query])
   return (
-    <div className='d-flex flex-column align-items-center py-5 border mt-5 text-center'>
-
+    <div id='general' className='d-flex flex-column align-items-center py-5 border  text-center'>
+        <h1>Welcome to my weather App☀️</h1>
       <div className='d-flex m-3'>
         <input placeholder='Enter city please..🔎' ref={inputRef} className='form-control' type="text" />
-        <button onClick={() => {
+        <button id='button' onClick={() => {
           nav('?city=' + inputRef.current.value);
 
         }} className='mx-2 btn btn-primary'>Search</button>
