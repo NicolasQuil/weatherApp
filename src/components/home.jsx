@@ -36,7 +36,6 @@ const Home = () => {
     }
     console.log(obj);
     setData(obj)
-
     setLoading(false)
   }
 
