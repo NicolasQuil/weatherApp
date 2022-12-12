@@ -1,6 +1,5 @@
 import axios from 'axios'
 import './home.css';
-
 import React, { useEffect } from 'react'
 import { useRef } from 'react'
 import { useState } from 'react'
@@ -45,6 +44,7 @@ const Home = () => {
     console.log(query.get("city"))
     doApi();
   }, [query])
+
   return (
     <div id='general' className='d-flex flex-column align-items-center py-5  text-center'>
       <h1 id='title'>Welcome to my weather App☀️</h1>
@@ -61,7 +61,6 @@ const Home = () => {
           <h1>City:{data.location.city}</h1>
           <h2>Temp:{data.weather.temp}</h2>
           <h2>Desc:{data.weather.desc}</h2>
-
         </div>}
 
     </div>
