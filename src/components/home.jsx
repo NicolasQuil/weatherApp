@@ -1,4 +1,5 @@
 import axios from 'axios'
+import './home.css';
 
 import React, { useEffect } from 'react'
 import { useRef } from 'react'
