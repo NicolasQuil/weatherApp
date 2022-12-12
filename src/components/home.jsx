@@ -34,7 +34,6 @@ const Home = () => {
         lon: data.coord.lon,
         lat: data.coord.lat
       }
-
     }
     console.log(obj);
     setData(obj)
@@ -47,8 +46,8 @@ const Home = () => {
     doApi();
   }, [query])
   return (
-    <div id='general' className='d-flex flex-column align-items-center py-5 border  text-center'>
-        <h1>Welcome to my weather App☀️</h1>
+    <div id='general' className='d-flex flex-column align-items-center py-5  text-center'>
+      <h1 id='title'>Welcome to my weather App☀️</h1>
       <div className='d-flex m-3'>
         <input placeholder='Enter city please..🔎' ref={inputRef} className='form-control' type="text" />
         <button id='button' onClick={() => {
@@ -58,7 +57,7 @@ const Home = () => {
       </div>
 
       {loading ? <h1>Loading...</h1> :
-        <div className=''>
+        <div id='info'>
           <h1>City:{data.location.city}</h1>
           <h2>Temp:{data.weather.temp}</h2>
           <h2>Desc:{data.weather.desc}</h2>

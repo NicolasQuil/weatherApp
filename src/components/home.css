@@ -5,6 +5,18 @@
 
 }
 
+#title {
+    text-shadow: -5px 1px 7px rgba(169, 93, 93, 0.6);
+}
+
 #button:hover {
     color: rgb(241, 138, 13);
+}
+
+#info {
+    text-shadow: -5px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#info:hover {
+    text-shadow: -5px 1px 5px rgba(245, 116, 47, 0.4);
 }
