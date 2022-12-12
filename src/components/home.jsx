@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import React, { useEffect } from 'react'
 import { useRef } from 'react'
 import { useState } from 'react'
@@ -45,10 +46,10 @@ const Home = () => {
     doApi();
   }, [query])
   return (
-    <div className='d-flex flex-column align-items-center py-5 border '>
+    <div className='d-flex flex-column align-items-center py-5 border mt-5 text-center'>
 
       <div className='d-flex m-3'>
-        <input placeholder='Enter city please..' ref={inputRef} className='form-control' type="text" />
+        <input placeholder='Enter city please..🔎' ref={inputRef} className='form-control' type="text" />
         <button onClick={() => {
           nav('?city=' + inputRef.current.value);
 
@@ -56,7 +57,7 @@ const Home = () => {
       </div>
 
       {loading ? <h1>Loading...</h1> :
-        <div className='border'>
+        <div className=''>
           <h1>City:{data.location.city}</h1>
           <h2>Temp:{data.weather.temp}</h2>
           <h2>Desc:{data.weather.desc}</h2>
