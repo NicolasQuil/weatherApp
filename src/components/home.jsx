@@ -45,10 +45,8 @@ const Home = () => {
   }, [query])
 
   return (
-    
     <div id='general' className='d-flex flex-column align-items-center py-5  text-center'>
-      
-      
+
       <h1 id='title'>Welcome to my weather App☀️</h1>
       <div className='d-flex m-3'>
         <input placeholder='Enter city please..🔎' ref={inputRef} className='form-control' type="text" />
