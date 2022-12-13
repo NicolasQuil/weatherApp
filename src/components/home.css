@@ -9,7 +9,7 @@
 }
 
 #button:hover {
-    color: rgb(241, 138, 13);
+    color: rgb(251, 144, 14);
 }
 
 #info {
@@ -19,4 +19,4 @@
 
 #info:hover {
     text-shadow: -5px 1px 5px rgba(245, 116, 47, 0.4);
-}
+} 
