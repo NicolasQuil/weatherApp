@@ -60,10 +60,9 @@ const Home = () => {
       {loading ? <h1>Loading...</h1> :
         <div id='info'>
           <div className='d-flex flex-column'> <h1>{data.weather.temp}C°</h1>
-          
-          <h1>City:{data.location.city}</h1>
-          
-          <h2>Desc:{data.weather.desc}</h2>
+
+            <h1>City:{data.location.city}</h1>
+            <h2>Desc:{data.weather.desc}</h2>
           </div>
         </div>}
 
