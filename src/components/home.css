@@ -63,11 +63,16 @@
     border-radius: 30px;
 }
 
+#hum {
+    border: 5px rgba(247, 80, 8, 0.168) solid;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
 #footer {
     text-align: center;
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(29, 28, 28, 1) 0%, rgba(161, 54, 35, 0.87) 100%);
     color: white;
     height: 25px;
-
 }
