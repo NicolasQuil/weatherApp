@@ -1,22 +1,73 @@
 #general {
     background-image: url("../img/clima.jpg");
     background-size: cover;
-    height: 850px;
+    height: 792px;
+}
+
+#header {
+    text-align: center;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(29, 28, 28, 1) 0%, rgba(161, 54, 35, 0.87) 100%);
+    color: white;
+    height: 25px;
 }
 
 #title {
     text-shadow: -5px 1px 7px rgba(169, 93, 93, 0.6);
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 2.5em;
 }
 
-#button:hover {
-    color: rgb(251, 144, 14);
+#button {
+    transition: all 0.5s ease-out;
+}
+
+#button:hover,
+:focus {
+    background-color: rgb(173, 96, 29);
+    color: #333;
+}
+
+#button:focus {
+    background-color: rgb(223, 73, 18);
+    color: #333;
 }
 
 #info {
     text-shadow: -5px 1px 5px rgba(0, 0, 0, 0.4);
     margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #info:hover {
-    text-shadow: -5px 1px 5px rgba(245, 116, 47, 0.4);
-} 
+    text-shadow: -5px 1px 5px rgba(245, 116, 47, 0.178);
+}
+
+#temp {
+    border: 5px rgba(247, 80, 8, 0.143) solid;
+    border-radius: 30px;
+    color: rgba(244, 74, 17, 0.783);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+}
+
+#city {
+    border: 5px rgba(247, 80, 8, 0.168) solid;
+    border-radius: 20px;
+    font-size: 2.5em;
+}
+
+#desc {
+    border: 5px rgba(247, 80, 8, 0.168) solid;
+    border-radius: 30px;
+}
+
+#footer {
+    text-align: center;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(29, 28, 28, 1) 0%, rgba(161, 54, 35, 0.87) 100%);
+    color: white;
+    height: 25px;
+
+}

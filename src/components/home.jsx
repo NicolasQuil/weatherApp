@@ -46,26 +46,32 @@ const Home = () => {
   }, [query])
 
   return (
-    <div id='general' className='d-flex flex-column align-items-center py-5  text-center'>
+    <div>
+      <div id='header'><span>Nicolas Quil®</span></div>
+      <div id='general' className='d-flex flex-column align-items-center  text-center'>
 
-      <h1 id='title'>Welcome to my weather App☀️</h1>
-      <div className='d-flex m-3'>
-        <input placeholder='Enter city please..🔎' ref={inputRef} className='form-control' type="text" />
-        <button id='button' onClick={() => {
-          nav('?city=' + inputRef.current.value);
+        <h1 id='title'>Welcome to my weather App☀️</h1>
+        <div className='d-flex m-3'>
+          <input placeholder='Enter city please..🔎' ref={inputRef} className='form-control' type="text" />
+          <button id='button' onClick={() => {
+            nav('?city=' + inputRef.current.value);
 
-        }} className='mx-2 btn btn-primary'>Search</button>
+          }} className='mx-2 btn btn-primary'>Search</button>
+        </div>
+
+        {loading ? <h1>Loading...</h1> :
+          <div id='info' className='d-flex flex-column'>
+            <div>
+              <h1 id='city'>{data.location.city}.{data.location.country}</h1>
+              <h1 id='temp'>{data.weather.temp}C°</h1>
+              <h2 id='desc' >{data.weather.desc}</h2>
+            </div>
+          </div>}
+
       </div>
-
-      {loading ? <h1>Loading...</h1> :
-        <div id='info'>
-          <div className='d-flex flex-column'> <h1>{data.weather.temp}C°</h1>
-
-            <h1>City:{data.location.city}</h1>
-            <h2>Desc:{data.weather.desc}</h2>
-          </div>
-        </div>}
-
+      <div id='footer'>
+        <span>Thank You for using the App.</span>
+      </div>
     </div>
   )
 }
