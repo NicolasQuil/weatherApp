@@ -24,6 +24,7 @@ const Home = () => {
         sunset: data.sys.sunset
       },
       weather: {
+        icon: data.weather[0].icon,
         temp: data.main.temp,
         humidity: data.main.humidity,
         wind: data.wind.speed,
@@ -58,9 +59,12 @@ const Home = () => {
 
       {loading ? <h1>Loading...</h1> :
         <div id='info'>
+          <div className='d-flex flex-column'> <h1>{data.weather.temp}C°</h1>
+          
           <h1>City:{data.location.city}</h1>
-          <h2>Temp:{data.weather.temp}</h2>
+          
           <h2>Desc:{data.weather.desc}</h2>
+          </div>
         </div>}
 
     </div>
