@@ -42,7 +42,19 @@
 
 #info:hover {
     text-shadow: -5px 1px 5px rgba(245, 116, 47, 0.178);
+    cursor: pointer;
 }
+
+#info_down {
+    text-shadow: -5px 1px 5px rgba(0, 0, 0, 0.4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#info_down:hover {
+    text-shadow: -5px 1px 5px rgba(245, 116, 47, 0.178);
+    cursor: pointer;
+}
+
 
 #temp {
     border: 5px rgba(247, 80, 8, 0.143) solid;

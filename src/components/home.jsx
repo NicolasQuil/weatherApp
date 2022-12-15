@@ -67,7 +67,7 @@ const Home = () => {
                 <h1 id='temp'>{data.weather.temp}C°</h1>
               </div>
             </div>
-            <div className='d-flex '>
+            <div id='info_down' className='d-flex '>
               <h2 id='desc' >{data.weather.desc}</h2>
               <h2 id='hum' > Humidity:{data.weather.humidity}</h2>
 
@@ -76,7 +76,7 @@ const Home = () => {
         }
       </div>
       <div id='footer'>
-        <span>Thank You for using the App.</span>
+        <span>Thank You for using the App 👍🏻</span>
       </div>
     </div>
   )
