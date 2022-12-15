@@ -60,18 +60,20 @@ const Home = () => {
         </div>
 
         {loading ? <h1>Loading...</h1> :
+        <div>
           <div id='info' className='d-flex flex-column'>
             <div>
               <h1 id='city'>{data.location.city}.{data.location.country}</h1>
               <h1 id='temp'>{data.weather.temp}C°</h1>
             </div>
-          </div>}
+          </div>
         <div className='d-flex '>
           <h2 id='desc' >{data.weather.desc}</h2>
           <h2 id='hum' > Humidity:{data.weather.humidity}</h2>
 
         </div>
-
+</div>
+}
       </div>
       <div id='footer'>
         <span>Thank You for using the App.</span>
