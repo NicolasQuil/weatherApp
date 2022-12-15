@@ -64,7 +64,7 @@ const Home = () => {
             <div id='info' className='d-flex flex-column'>
               <div>
                 <h1 id='city'>{data.location.city}.{data.location.country}</h1>
-                <h1 id='temp'>{data.weather.temp}C°</h1>
+                <h1 id='temp'>{data.weather.temp.toFixed()}C°</h1>
               </div>
             </div>
             <div id='info_down' className='d-flex '>
