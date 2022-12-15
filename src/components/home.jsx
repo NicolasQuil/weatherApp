@@ -74,7 +74,7 @@ const Home = () => {
 
       </div>
       <div id='footer'>
-        <span>Thank You for using the App..</span>
+        <span>Thank You for using the App.</span>
       </div>
     </div>
   )
